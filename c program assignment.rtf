@@ -1,0 +1,712 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.10240}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs32\lang9                          \fs96 c programs\par
+\par
+\fs32 *Program to Display "Hello, World!"\par
+\b0\fs22                      #include <stdio.h>\par
+                         int main() \{\par
+                          printf("Hello, World!");\par
+                          return 0;\par
+                              \}\par
+\b\fs32\par
+*Program to Add Two Integers\par
+\b0\fs22                  #include <stdio.h>\par
+                      int main() \{   \par
+                    int number1, number2, sum;\par
+                    printf("Enter two integers: ");\par
+                    scanf("%d %d", &number1, &number2)\par
+                   // calculating sum\par
+                       sum = number1 + number2;      \par
+                   printf("%d + %d = %d", number1, number2, sum);\par
+                        return 0;\par
+                           \}\par
+   \b\fs32 * program to calculate area of rectangle\b0\fs22\par
+              Formula: Area of Rectangle = length * breadth.\par
+\par
+                            #include<stdio.h>\par
+                                int main()\{\par
+                                   int length, breadth, rect_area;\par
+                                   printf("Enter Length  : ");\par
+                                      scanf("%d",&length);\par
+                                  printf("Enter Breadth : ");\par
+                                   scanf("%d",&breadth);\par
+                                      rect_area = length * breadth;\par
+                                  printf("\\nArea of Rectangle = %d",rect_area);\par
+                                            return 0;\par
+                                                 \}\par
+\par
+\b\fs32 *C Program to convert Celsius to Fahrenheit\par
+                     \b0\fs22 #include<stdio.h>\par
+\b\fs32                       \b0\fs22 int main()\{\par
+                                 float celsius,fahrenheit;\par
+                                   printf("\\n Enter the Temparature in Celsius : ");\par
+                                  scanf("%f",&celsius);\par
+                                fahrenheit = (1.8 * celsius) + 32;\par
+                               printf("\\n Temperature in Fahrenheit : %f ",fahrenheit);\par
+                                    return 0;\par
+                                              \}\par
+\b\fs32 * C program to Check Whether a Number is Positive or Negative or Zero\par
+                           \b0\fs22 #include <stdio.h>\par
+                                                     int main()\{\par
+                                                      int A;\par
+                                           printf("Enter the number A: ");\par
+                                               scanf("%d", &A);\par
+                                                if (A > 0)\par
+                                           printf("%d is positive.", A);         \par
+                                             else if (A < 0)\par
+                                          printf("%d is negative.", A);\par
+                                                     else if (A == 0)\par
+                                               printf("%d is zero.", A);\par
+                                               return 0;\par
+                                                  \}\par
+\b\fs32 *C Program to Check Whether a Number is Even or Odd\par
+
+\pard\sa200\sl276\slmult1\qj                                     \b0\fs22 #include <stdio.h>\par
+
+\pard\sa200\sl276\slmult1\qc   int main() \{\par
+    int num;\par
+    printf("Enter an integer: ");\par
+    scanf("%d", &num);\par
+    if(num % 2 == 0)\par
+        printf("%d is even.", num);\par
+    else\par
+        printf("%d is odd.", num);\par
+   return 0;\par
+\}\par
+
+\pard\sa200\sl276\slmult1\b\fs32 *C Program to Find Factorial of a Number using for loop.\par
+\b0\fs22   #include <stdio.h>\par
+int main() \{\par
+ int x,fact=1,n;\par
+   printf("Enter a number to find factorial: ");\par
+  scanf("%d",&n); \par
+    for(x=1;x<=n;x++)\par
+        fact=fact*x; \par
+    printf("Factorial of %d is: %d",n,fact);\par
+    return 0;\par
+\}\par
+\b\fs32\par
+*C Program to Find Factorial Using While Loop\par
+\b0\fs22 #include<stdio.h>\par
+int main()\{\par
+    int x=1,fact=1,n;\par
+    printf("Enter a number to find factorial: ");\par
+    scanf("%d",&n);\par
+    while(x<=n)\{\par
+        fact=fact*x;\par
+        x++;\par
+    \} \par
+    printf("Factorial of %d is: %d",n,fact);\par
+    return 0;\par
+\}\par
+\par
+\b\fs32 *C Program to Find Factorial Using Function\par
+\b0\fs22 #include<stdio.h>\par
+int findFact(int);\par
+int main()\{\par
+    int x,fact,n;\par
+    printf("Enter a number to get factorial: ");\par
+    scanf("%d",&n);\par
+    fact = findFact(n);\par
+    printf("The factorial of %d is: %d",n,fact);\par
+    return 0;\par
+\}\par
+int findFact(int n)\{\par
+    int x,fact=1;\par
+    for(x=1;x<=n;x++)\par
+      fact=fact*x;\par
+     return fact;\par
+\}\par
+\par
+\b\fs32 *program to check number is prime or not\par
+\b0\fs22 #include <stdio.h>\par
+int main() \{\par
+   int num = 33, flag = 0;\par
+   for(int i=2 ; i < num/2 ; i++) \{\par
+      if(num%i == 0) \{\par
+         printf("%d is not a prime number", num);\par
+         flag = 1;\par
+         break;\par
+      \}\par
+   \}\par
+   if(flag == 0) \{\par
+      printf("%d is a prime number", num);\par
+   \}\par
+\}\par
+\b\fs32\par
+*c program Power Using pow() Function\par
+\b0\fs22 #include <math.h>\par
+#include <stdio.h>\par
+int main() \{\par
+    double base, exp, result;\par
+    printf("Enter a base number: ");\par
+    scanf("%lf", &base);\par
+    printf("Enter an exponent: ");\par
+    scanf("%lf", &exp);\par
+    // calculates the power\par
+    result = pow(base, exp);\par
+    printf("%.1lf^%.1lf = %.2lf", base, exp, result);\par
+    return 0;\par
+\}\par
+\par
+\b\fs32 *C program to print day of week name using switch case\b0\fs22\par
+#include <stdio.h>\par
+int main()\par
+\{\par
+    int week;\par
+        printf("Enter week number(1-7): ");\par
+    scanf("%d", &week);\par
+        switch(week)\par
+    \{\par
+        case 1: \par
+            printf("Monday");\par
+            break;\par
+        case 2: \par
+            printf("Tuesday");\par
+            break;\par
+        case 3: \par
+            printf("Wednesday");\par
+            break;\par
+        case 4: \par
+            printf("Thursday");\par
+            break;\par
+        case 5: \par
+            printf("Friday");\par
+            break;\par
+        case 6: \par
+            printf("Saturday");\par
+            break;\par
+        case 7: \par
+            printf("Sunday");\par
+            break;\par
+        default: \par
+            printf("Invalid input! Please enter week number between 1-7.");\par
+    \}\par
+   return 0;\par
+\}\par
+\par
+\b\fs32 *C program to check vowel or consonant using switch case\par
+\b0\fs22 #include <stdio.h>\par
+int main()\par
+\{\par
+    char ch;\par
+printf("Enter any alphabet: ");\par
+    scanf("%c", &ch);\par
+  switch(ch)\par
+    \{\par
+        case 'a': \par
+            printf("Vowel");\par
+            break;\par
+        case 'e': \par
+            printf("Vowel");\par
+            break;\par
+        case 'i': \par
+            printf("Vowel");\par
+            break;\par
+        case 'o': \par
+            printf("Vowel");\par
+            break;\par
+        case 'u': \par
+            printf("Vowel");\par
+            break;\par
+        case 'A': \par
+            printf("Vowel");\par
+            break;\par
+        case 'E': \par
+            printf("Vowel");\par
+            break;\par
+        case 'I': \par
+            printf("Vowel");\par
+            break;\par
+        case 'O': \par
+            printf("Vowel");\par
+            break;\par
+        case 'U': \par
+            printf("Vowel");\par
+            break;\par
+        default: \par
+            printf("Consonant");    \}\par
+    return 0;\par
+\}\par
+\b\fs32\par
+*C Program to Print Pyramids and Patterns\par
+\b0\fs22 Example 1: Half Pyramid of *\par
+*\par
+* *\par
+* * *\par
+* * * *\par
+* * * * *\par
+C Program\par
+\par
+#include <stdio.h>\par
+int main() \{\par
+   int i, j, rows;\par
+   printf("Enter the number of rows: ");\par
+   scanf("%d", &rows);\par
+   for (i = 1; i <= rows; ++i) \{\par
+      for (j = 1; j <= i; ++j) \{\par
+         printf("* ");\par
+      \}\par
+      printf("\\n");\par
+   \}\par
+   return 0;\par
+\}\par
+Run Code\par
+\b\fs32 Example 2: Half Pyramid of Numbers\par
+\fs22 1\par
+1 2\par
+1 2 3\par
+1 2 3 4\par
+1 2 3 4 5\b0\par
+\par
+\par
+#include <stdio.h>\par
+int main() \{\par
+   int i, j, rows;\par
+   printf("Enter the number of rows: ");\par
+   scanf("%d", &rows);\par
+   for (i = 1; i <= rows; ++i) \{\par
+      for (j = 1; j <= i; ++j) \{\par
+         printf("%d ", j);\par
+      \}\par
+      printf("\\n");\par
+   \}\par
+   return 0;\par
+\}\par
+\par
+\b\fs32 * Half Pyramid of Alphabets\par
+\fs22 A\par
+B B\par
+C C C\par
+D D D D\par
+E E E E E\b0\par
+\par
+#include <stdio.h>\par
+int main() \{\par
+   int i, j;\par
+   char input, alphabet = 'A';\par
+   printf("Enter an uppercase character you want to print in the last row: ");\par
+   scanf("%c", &input);\par
+   for (i = 1; i <= (input - 'A' + 1); ++i) \{\par
+      for (j = 1; j <= i; ++j) \{\par
+         printf("%c ", alphabet);\par
+      \}\par
+      ++alphabet;\par
+      printf("\\n");\par
+   \}\par
+   return 0;\par
+\}\par
+\par
+ \b\fs32 Inverted half pyramid of *\par
+\fs22 * * * * *\par
+* * * *\par
+* * * \par
+* *\par
+*\par
+\b0\par
+#include <stdio.h>\par
+int main() \{\par
+   int i, j, rows;\par
+   printf("Enter the number of rows: ");\par
+   scanf("%d", &rows);\par
+   for (i = rows; i >= 1; --i) \{\par
+      for (j = 1; j <= i; ++j) \{\par
+         printf("* ");\par
+      \}\par
+      printf("\\n");\par
+   \}\par
+   return 0;\par
+\}\par
+\par
+\b\fs32 *Fibonacci Sequence Up to a Certain Number\par
+\b0\fs22 #include <stdio.h>\par
+int main() \{\par
+  int t1 = 0, t2 = 1, nextTerm = 0, n;\par
+  printf("Enter a positive number: ");\par
+  scanf("%d", &n);\par
+  printf("Fibonacci Series: %d, %d, ", t1, t2);\par
+  nextTerm = t1 + t2;\par
+  while (nextTerm <= n) \{\par
+    printf("%d, ", nextTerm);\par
+    t1 = t2;\par
+    t2 = nextTerm;\par
+    nextTerm = t1 + t2;\par
+  \}\par
+  return 0;\par
+\}\par
+\par
+\b\fs32 *C Program to find Perfect Number using For Loop\par
+\b0\fs22 # include <stdio.h>   \par
+int main()   \par
+\{   \par
+ int i, Number, Sum = 0 ;   \par
+  printf("\\n Please Enter any number \\n") ;   \par
+ scanf("%d", &Number) ;   \par
+  for(i = 1 ; i < Number ; i++)   \par
+  \{   \par
+   if(Number % i == 0)   \par
+     Sum = Sum + i ;   \par
+  \}    \par
+ if (Sum == Number)   \par
+    printf("\\n %d is a Perfect Number", Number) ;   \par
+ else   \par
+    printf("\\n%d is not the Perfect Number", Number) ;   \par
+return 0 ;   \par
+\}\par
+\par
+\par
+\b\fs32 *To Find Sum Of All Array Elements \par
+\b0\fs22 # include<stdio.h>  \par
+int main()\par
+\{\par
+    int a[5],i,n,sum=0;\par
+      printf("Enter size of the array : ");\par
+    scanf("%d",&n);\par
+    printf("Enter elements in array : ");\par
+    for(i=0; i<n; i++)\par
+    \{\par
+        scanf("%d",&a[i]);\par
+    \}\par
+ for(i=0; i<n; i++)\par
+    \{\par
+               sum+=a[i];\par
+    \}\par
+     printf("sum of array is : %d",sum);\par
+   return 0;\par
+\}\b\fs32\par
+\b0\fs22\par
+\b\fs32 *To Find Maximum & Minimum Element In Array\par
+\b0\fs22  #include <conio.h>\par
+int main()\par
+\{\par
+    int a[100],i,n,min,max;\par
+      printf("Enter size of the array : ");\par
+    scanf("%d",&n);\par
+    printf("Enter elements in array : ");\par
+    for(i=0; i<n; i++)\par
+    \{\par
+        scanf("%d",&a[i]);\par
+    \}\par
+     min=max=a[0];\par
+    for(i=1; i<n; i++)\par
+    \{\par
+         if(min>a[i])\par
+\tab\tab   min=a[i];   \par
+\tab\tab    if(max<a[i])\par
+\tab\tab     max=a[i];       \par
+    \}\par
+     printf("minimum of array is : %d",min);\par
+          printf("\\nmaximum of array is : %d",max);\par
+  return 0;\par
+\} \par
+\par
+\b\fs32 *C Program to Print Even and Odd Numbers in an Array\b0\fs22\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+   int n, a[20];\par
+   printf("Enter the size of the array: ");\par
+   scanf("%d", &n); \par
+   printf("Enter array elements: \\n");\par
+   for(int i=0; i<n; i++)\par
+   \{\par
+      scanf("%d",&a[i]);\par
+   \}\par
+   printf("Even numbers in the array are: \\n");\par
+   for(int i=0; i<n; i++)\par
+   \{\par
+     if(a[i]%2==0)\par
+     printf("%d ", a[i]);\par
+   \}\par
+   printf("\\nOdd numbers in the array are: \\n");\par
+   for(int i=0; i<n; i++)\par
+   \{\par
+     if(a[i]%2!=0)\par
+     printf("%d ", a[i]);\par
+   \}\par
+ return 0;\par
+\}\par
+\par
+\b\fs32 *sum of all elements in 2 D array\par
+\b0\fs22 #include<stdio.h>\par
+void main()\{\par
+   //Declaring array and variables//\par
+   int A[4][3],i,j,even=0,odd=0;\par
+   printf("Enter elements into the array A : ");\par
+   for(i=0;i<4;i++)\{\par
+      for(j=0;j<3;j++)\{\par
+         printf("A[%d][%d] : ",i,j);\par
+         scanf("%d",&A[i][j]);\par
+      \}\par
+   \}\par
+   for(i=0;i<4;i++)\{\par
+      for(j=0;j<3;j++)\{\par
+         if((A[i][j])%2==0)\{\par
+            even = even+A[i][j];\par
+         \}\par
+         else\{\par
+            odd = odd+A[i][j];\par
+         \}\par
+      \}\par
+   \}\par
+   printf("Sum of even elements in array A is : %d\par
+",even);\par
+   printf("Sum of odd elements in array A is : %d",odd);\par
+\}\par
+\b\fs32\par
+*Armstrong number program in C\par
+\b0\fs22 #include <stdio.h>\par
+int power(int, int);\par
+int main()\par
+\{\par
+  int n, sum = 0, t, remainder, digits = 0;\par
+  printf("Input an integer\\n");\par
+  scanf("%d", &n);\par
+t = n;\par
+  while (t != 0) \{\par
+    digits++;\par
+    t = t/10;\par
+  \}\par
+  t = n;\par
+  while (t != 0) \{\par
+    remainder = t%10;\par
+    sum = sum + power(remainder, digits);\par
+    t = t/10;\par
+  \}\par
+  if (n == sum)\par
+    printf("%d is an Armstrong number.\\n", n);\par
+  else\par
+    printf("%d isn't an Armstrong number.\\n", n);\par
+  return 0;\par
+\}\par
+int power(int n, int r) \{\par
+  int c, p = 1;\par
+  for (c = 1; c <= r; c++)\par
+    p = p*n;\par
+return p;\par
+\}\par
+\b\fs32  * Passing Array to Function \par
+\b0\fs22 #include<stdio.h>  \par
+int minarray(int arr[],int size)\{    \par
+int min=arr[0];    \par
+int i=0;    \par
+for(i=1;i<size;i++)\{    \par
+if(min>arr[i])\{    \par
+min=arr[i];    \par
+\}    \par
+\}\par
+//end of for    \par
+return min;    \par
+\}\par
+//end of function    \par
+    int main()\{      \par
+int i=0,min=0;    \par
+int numbers[]=\{4,5,7,3,8,9\};//declaration of array    \par
+  min=minarray(numbers,6);//passing array with size    \par
+printf("minimum number is %d \\n",min);    \par
+return 0;  \par
+\}  \par
+\par
+\b\fs32 * even and odd using function\b0\fs22\par
+#include <stdio.h>\par
+void even_odd(int)\par
+void main()\par
+\{\par
+    int a;\par
+    scanf("%d",&a);\par
+    even_odd(a);\par
+\}\par
+void even_odd(int a)\par
+\{\par
+if(a%2==0)\par
+printf("no. is even");\par
+else\par
+printf("no. is odd");\par
+    \}\par
+\par
+\b\fs32 * find diameter,circumference and area of circle\par
+\b0\fs22 # include <stdio.h>\par
+void circle(int)\par
+void main()\par
+\{\par
+    int r;\par
+    scanf("%d",&r);\par
+    circle(r);\par
+\}\par
+void circle(int r)\par
+\{\par
+    int d;\par
+    float a,c ;\par
+    d = 2*r;\par
+    c = 2*3.14*r;\par
+    r = 3.14*r*r;\par
+printf("%d\\n %f\\n %f\\n",d,c,r);\par
+\}\par
+\par
+\b\fs32 * to find power of any number using function\par
+\b0\fs22 #include <stdio.h>\par
+# include< math.h>\par
+void power(int,int)\par
+void main()\par
+\{\par
+    int a,b;\par
+    scanf("%d %d",&a,&b);\par
+    power(a,b);\par
+\}\par
+void power(int a,int b)\par
+\{\par
+    int c;\par
+    c = pow(a,b);\par
+    printf(" %d\\n",c);\par
+\}\par
+\par
+\b\fs32 * to print all natural number using function\par
+\b0\fs22\par
+#include <stdio.h>\par
+# include< math.h>\par
+void natural_number(int)\par
+void main()\par
+\{\par
+    int n;\par
+    scanf("%d",&n);\par
+    natural_number(n);\par
+\}\par
+void natural_number(int n)\par
+\{\par
+    int i =1;\par
+    while(i<=n)\par
+    \{    \par
+printf(" %d\\n",i);\par
+i++;\par
+\}\par
+\}\par
+\par
+\b\fs32 * to sum of all natural numbers using function\b0\fs22\par
+#include <stdio.h>\par
+# include< math.h>\par
+void natural_number(int)\par
+void main()\par
+\{\par
+    int n;\par
+    scanf("%d",&n);\par
+    natural_number(n);\par
+\}\par
+void natural_number(int n)\par
+\{\par
+    int i =1;\par
+    int sum = 0;\par
+    while(i<=n)\par
+\{\par
+    sum = sum + i;\par
+    i++;\par
+\}    \par
+ printf("sum =  %d\\n",sum);\par
+\}\par
+\par
+\b\fs32 * to swap numbers using functions\b0\fs22\par
+#include <stdio.h>\par
+int swap(int,int)\par
+int main()\par
+\{\par
+    int a,b;\par
+    scanf("%d %d",&a,&b);\par
+    printf("before calling %d %d",a,b);\par
+    int k = swap(a,b);\par
+    printf("after calling %d %d",a,b);\par
+\}\par
+    int swap(int a,int b);\par
+\{\par
+    int temp ;\par
+    temp = a;\par
+    a = b;\par
+    b = temp;\par
+\}    \par
+    \par
+\b\fs32 * to print lcm by  using function\b0\fs22\par
+#include <stdio.h>\par
+int lcm(int,int)\par
+int main()\par
+\{\par
+    int a,b;\par
+    scanf("%d %d",&a,&b);\par
+      lcm(a,b);\par
+\}\par
+    void lcm(int a,int b);\par
+\{\par
+   int k,max;\par
+   if(a<b)\par
+   max = b;\par
+   else\par
+   max = a;\par
+for(int i = max; ; i++)\par
+    if(i%a==0&&i%b==0)\par
+    \{\par
+        k = 1;\par
+        break;\par
+    \}\par
+    printf("%d",k);\par
+\}    \b\fs32\par
+\par
+    * To print hcf using function\par
+\b0\fs22 #include <stdio.h>\par
+int hcf(int,int)\par
+int main()\par
+\{\par
+    int a,b;\par
+    scanf("%d %d",&a,&b);\par
+    hcf(a,b);\par
+\}\par
+   void hcf(int a,int b);\par
+\{\par
+   int k,min;\par
+   if(a<b)\par
+   min = a;\par
+   else\par
+   min = a;\par
+for(int i = 1; i<=min;i++)\par
+    if(i%a==0&&i%b==0)\par
+    \{\par
+        k = i;\par
+      \par
+    \}\par
+    printf("%d",k);\par
+\}    \par
+   \b\fs32 * To create,  initialize pointers\par
+\b0\fs22 #include <stdio.h>\par
+void main()\par
+\{\par
+int a = 5;\par
+int *p;\par
+p = &a; \par
+    printf("%d\\n %p\\n",*p,p);\par
+\}\par
+\b\fs32 *To add two number using pointer    \b0\fs22\par
+#include <stdio.h>\par
+void main()\par
+\{\par
+int a = 5,b =6;\par
+int *p,*q;\par
+p = &a; \par
+q = &b;\par
+    printf("%d,*p+*q);\par
+\}\par
+\par
+\b\fs32 * To swap numbers using pointers\b0\fs22\par
+#include <stdio.h>\par
+void main()\par
+\{\par
+int x,y,temp;\par
+int *p,*q;\par
+scanf("%d %d",&x,&Y)\par
+printf("before swapping x = %d,y = %d",x,y)\par
+p = &x; \par
+q = &y;\par
+temp = *b;\par
+*b = *a;\par
+*a = temp\par
+    printf("x = %d\\n y = %d",x,y);\par
+\}\par
+    \par
+\par
+}
+ 
